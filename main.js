@@ -2,10 +2,7 @@ const electron = require("electron");
 const url = require("url");
 const path = require("path");
 
-const{app, BrowserWindow, Menu} = electron;
-
-//SET ENV
-//process.env.NODE_ENV = 'production';
+const{app, BrowserWindow, Menu, ipcMain} = electron;
 
 let mainWindow;
 //let addWindow;
@@ -70,7 +67,22 @@ const mainMenuTemplate = [
         label:'File',
         submenu: [
             {
-                label:'About'
+                label:'About',
+                click(){
+                    createAboutWindow();
+                }
+            },
+            {
+                label: 'Toggle DevTools',
+                accelerator: process.platform == 'darwin' ? 'Command+I' :
+                'Ctrl+I',
+                click(item, focusedWindow){
+                    focusedWindow.toggleDevTools();
+                }
+            },
+            {
+                role: 'Reload'
+
             }
         ]
     }
