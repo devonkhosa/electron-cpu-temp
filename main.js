@@ -33,7 +33,7 @@ app.on('ready', function() {
     Menu.setApplicationMenu(mainMenu);
 });
 
-//Handle create add window
+//Handle create about window
 function createAboutWindow(){
     //create new window
     aboutWindow = new BrowserWindow({
