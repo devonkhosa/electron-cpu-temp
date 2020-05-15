@@ -12,6 +12,7 @@
     "electron": "^8.2.5"
   },
   "dependencies": {
+    "osx-temperature-sensor": "^1.0.5",
     "systeminformation": "^4.25.1"
   }
 }
