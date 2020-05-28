@@ -3,6 +3,12 @@ const url = require("url");
 const path = require("path");
 const si = require('systeminformation');
 
+//CPU temp
+const osxTemp = require('osx-temperature-sensor');
+
+let temperature = osxTemp.cpuTemperature();
+console.log('CPU-Information: ' + temperature);
+
 
 const{app, BrowserWindow, Menu, ipcMain} = electron;
 

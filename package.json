@@ -9,10 +9,10 @@
   "author": "Devon Khosa",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^8.2.5"
+    "electron": "^9.0.0"
   },
   "dependencies": {
-    "osx-temperature-sensor": "^1.0.5",
+    "osx-temperature-sensor": "^1.0.7",
     "systeminformation": "^4.25.1"
   }
 }
