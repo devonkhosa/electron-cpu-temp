@@ -1,0 +1,18 @@
+{
+  "name": "cpu-temp",
+  "version": "1.0.0",
+  "description": "App to monitor your cpu temperature",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Devon Khosa",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^9.0.0"
+  },
+  "dependencies": {
+    "osx-temperature-sensor": "^1.0.7",
+    "systeminformation": "^4.25.1"
+  }
+}
